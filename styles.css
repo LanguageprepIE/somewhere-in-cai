@@ -115,3 +115,9 @@ body:has(dialog[open]) { overflow: hidden; }
   .illustration.compact-hotspots [data-performances="caleta-guitarra"] { left: 23%; }
   .illustration.compact-hotspots [data-performances="vina-balcon"] { top: 23%; }
 }
+
+/* Instrucciones y voz de Eddie */
+.play-guide { max-width: 72ch; padding: .65rem 1rem; border-left: 3px solid #90532c; background: #e8d5ad55; margin: 1rem 0 1.25rem; }
+.play-guide p { margin: .35rem 0; }
+.eddie-intro { font-style: italic; }
+.eddie-intro strong { font-style: normal; }

@@ -143,11 +143,15 @@ function showPlace(place) {
   }
   const art = illustration(place, true);
   const hasHotspots = Boolean(art.querySelector('.hotspot'));
-  if (place.intro) sidebar.append(element('p', place.intro));
+  if (place.intro) {
+    const intro = element('p', '', 'eddie-intro');
+    intro.append(element('strong', 'Eddie: '), document.createTextNode(place.intro));
+    sidebar.append(intro);
+  }
   sidebar.append(element('p', hasHotspots
     ? place.id === 'torre-tavira'
-      ? 'Toca los carteles y personajes para abrir sus colecciones. Con el teclado, recórrelos con el tabulador.'
-      : 'Toca los detalles de la ilustración para descubrir sus coplas. Con el teclado, recórrelos con el tabulador.'
+      ? 'Toca o haz clic en los detalles de la imagen para abrir las colecciones escondidas. Si necesitas ayuda, pulsa «Dame una pista». Con el teclado, usa el tabulador.'
+      : 'Toca o haz clic en los objetos de la imagen para descubrir las coplas escondidas. Si necesitas ayuda, pulsa «Dame una pista». Con el teclado, usa el tabulador.'
     : 'Las coplas de esta parada llegarán en una próxima actualización.'));
   const controls = element('div', '', 'scene-controls');
   const hint = button('Dame una pista', 'hint', () => {

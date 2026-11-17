@@ -7,6 +7,7 @@ const places = [
   {
     id: 'campo-del-sur',
     name: 'El Campo del Sur',
+    intro: "He tocado en medio mundo, pero nunca había pescado con la Catedral a mis espaldas. Aquí me han dicho que hasta el levante tiene sus propias coplas. Vente conmigo, que todavía no sé ni por dónde empezar.",
     image: {
       src: 'assets/eddie-campo-del-sur.jpg',
       width: 1199,
@@ -27,7 +28,7 @@ const places = [
   {
     id: 'la-caleta',
     name: 'La Caleta',
-    intro: 'Eddie se asoma a La Caleta con un tipo inspirado en La maldición de la lapa negra.',
+    intro: "He venido a La Caleta buscando una lapa negra y me han dicho que tenga cuidado con lo que pesco. Entre castillos, barquitas y guitarras, esto tiene más historias que todas mis portadas juntas.",
     image: {
       src: 'assets/eddie-la-caleta.jpg',
       width: 1536,
@@ -47,7 +48,7 @@ const places = [
   {
     id: 'la-vina',
     name: 'El barrio de la Viña',
-    intro: 'Eddie se venda para volver a La Viña, la capital del mar.',
+    intro: "Me he puesto las vendas para pasar desapercibido por La Viña, pero aquí una momia es de lo más normal en febrero. Me voy a sentar un ratito, que seguro que alguien acaba arrancándose por pasodobles.",
     image: {
       src: 'assets/eddie-la-vina.jpg',
       width: 1536,
@@ -70,7 +71,7 @@ const places = [
   {
     id: 'el-puerto',
     name: 'El puerto y la bahía',
-    intro: 'Eddie vuelve al muelle para cantar a la bahía. Busca el azulejo Non Plus Ultra.',
+    intro: "Después de tantos escenarios, me apetecía cambiar los focos por los faroles del muelle. Entre barcos y aparejos me han contado que aquí se canta hasta para despedir a los que cruzan la bahía.",
     image: {
       src: 'assets/eddie-puerto.png',
       width: 1672,
@@ -92,7 +93,7 @@ const places = [
   {
     id: 'gran-teatro-falla',
     name: 'El Gran Teatro Falla',
-    intro: 'Entre bambalinas, Eddie se asoma al escenario del Falla.',
+    intro: "He pisado estadios enormes, pero reconozco que impone lo suyo asomarse a ese telón rojo. Aquí no hace falta una guitarra eléctrica para poner a un teatro entero en pie. Vamos a ver qué guardan estas tablas.",
     image: {
       src: './assets/eddie-falla.jpg', width: 1402, height: 1122,
       alt: 'Eddie entre el telón rojo y el escenario del Gran Teatro Falla, rodeado de instrumentos y recuerdos del Carnaval.'
@@ -114,7 +115,7 @@ const places = [
   {
     id: 'casco-antiguo',
     name: 'El casco antiguo',
-    intro: 'Eddie levanta la copa frente al Mercado Central. Entre los puestos de flores y el bullicio de la plaza, suenan las coplas del Cádiz de todos los días.',
+    intro: "He venido por una tapita y he acabado brindando con medio mercado. Entre flores, pescaderos y gente que no para de hablar, me estoy dando cuenta de que aquí cualquier esquina tiene su repertorio.",
     image: {
       src: './assets/eddie-casco-antiguo.png', width: 1448, height: 1086,
       alt: 'Eddie brinda ante el Mercado Central de Cádiz, con puestos de flores a la derecha y una cúpula al fondo.'
@@ -134,7 +135,7 @@ const places = [
   {
     id: 'torre-tavira',
     name: 'Torre Tavira — El Carnaval con más ange',
-    intro: 'Entre risas, Eddie se busca un sitio junto a Torre Tavira. Los personajes y carteles de la calle dan paso a parodias, cuplés, temas libres, romanceros y chirigotas callejeras.',
+    intro: "Creía que después de tantos años con los Maiden ya lo había visto todo. Pues no: me he sentado junto a Torre Tavira y estos cuartetos, romanceros y callejeras me están dejando sin mandíbula. Y eso que la mía ya venía bastante perjudicada.",
     image: { src: './assets/eddie-torre-tavira.jpg', width: 1448, height: 1086, alt: 'Eddie se ríe ante una actuación callejera junto a Torre Tavira, entre carteles de cuartetos y romanceros.' },
     hotspots: [
       { x: 96, y: 32.5, object: 'Cartel de Eugenio', collectionTitle: 'El Peña, el Masa y los clásicos', connection: 'Escenas de los clásicos del cuarteto gaditano.', performanceIds: ['tavira-boda', 'tavira-cenicienta', 'tavira-ensayo', 'tavira-calvo'] },
