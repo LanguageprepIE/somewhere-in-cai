@@ -128,3 +128,7 @@ body:has(dialog[open]) { overflow: hidden; }
 .project-credit .credit-title { font-family: var(--display); font-size: 1.2rem; font-weight: 600; }
 .project-credit .credit-note, .project-credit .credit-disclaimer { color: var(--muted); }
 .project-credit .credit-disclaimer { border-top: 1px solid #ffffff22; padding-top: .65rem; margin: .8rem auto 0; max-width: 28rem; }
+
+/* Colección personal: progreso sin revelar las coplas ocultas */
+.progress-mini { margin-inline-start: .4em; color: #90532c; font-variant-numeric: tabular-nums; }
+.collection-progress { font-weight: 650; font-variant-numeric: tabular-nums; }

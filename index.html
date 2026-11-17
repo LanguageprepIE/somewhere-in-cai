@@ -16,8 +16,7 @@
     <a class="brand" href="#" aria-label="Somewhere in Cai, inicio"><span aria-hidden="true">✦</span> Somewhere in Cai</a>
     <nav aria-label="Navegación principal">
       <a href="#el-paseo">El paseo</a>
-      <button type="button" data-collection="all">La antología</button>
-      <button type="button" data-collection="mine"><span class="nav-full">Mis descubrimientos</span><span class="nav-short">Descubrimientos</span></button>
+      <button type="button" data-collection="mine"><span class="nav-full">Mis descubrimientos</span><span class="nav-short">Descubrimientos</span> <span class="progress-mini" aria-hidden="true"></span></button>
     </nav>
   </header>
 
@@ -29,7 +28,7 @@
         <img id="cover-image" src="assets/portada-somewhere-in-cai.jpg" width="1536" height="864" fetchpriority="high" alt="Eddie, vestido de marinero, tiende la mano con la bandera del Cádiz CF y la catedral al atardecer al fondo.">
       </figure>
       <div class="hero-caption">
-        <button type="button" class="count" data-collection="mine"></button>
+        <button type="button" class="count" data-collection="mine" aria-live="polite"></button>
         <a href="#el-paseo" class="start">Date una vuelta por Cai <span aria-hidden="true">↓</span></a>
         <button type="button" class="expand" id="expand-hero"><span aria-hidden="true">⛶</span> Pantalla completa</button>
       </div>
@@ -38,7 +37,7 @@
     <section id="el-paseo" class="journey" aria-labelledby="journey-title">
       <div class="journey-header">
         <h2 id="journey-title">El paseo</h2>
-        <div class="play-guide"><p><strong>¿Cómo se juega?</strong> Elige una parada y toca o haz clic directamente sobre los detalles de la ilustración. Algunos esconden coplas y otros, colecciones de Carnaval.</p><p>¿No encuentras nada? Pulsa <strong>«Dame una pista»</strong> para ver los escondites. Cada descubrimiento se guarda en tu recorrido. ¡A ver cuántos encuentras!</p></div>
+        <div class="play-guide"><p><strong>¿Cómo se juega?</strong> Elige una parada y toca o haz clic directamente sobre los detalles de la ilustración. Algunos esconden coplas y otros, colecciones de Carnaval.</p><p>¿No encuentras nada? Pulsa <strong>«Dame una pista»</strong> para ver los escondites. Cada descubrimiento se añade a «Mis descubrimientos», donde podrás volver a disfrutarlo. ¡A ver cuántos encuentras!</p></div>
       </div>
       <nav class="stops" id="stops" aria-label="Paradas del paseo"></nav>
       <section class="scene" id="scene" aria-labelledby="scene-title"></section>

@@ -36,7 +36,8 @@ function addDiscovery(id) {
 
 function updateProgress() {
   const count = [...discovered].filter(id => published.has(id)).length;
-  document.querySelector('.count').textContent = `${count} de ${published.size} descubrimientos`;
+  document.querySelector('.count').textContent = `${count}/${published.size} descubrimientos`;
+  document.querySelector('.progress-mini').textContent = `${count}/${published.size}`;
   document.querySelectorAll('.hotspot').forEach(button => {
     const ids = button.dataset.performances.split(' ');
     const found = ids.every(id => discovered.has(id));
@@ -168,14 +169,14 @@ function showPlace(place) {
   updateProgress();
 }
 
-function showCollection(mode) {
-  const isMine = mode === 'mine';
-  document.querySelector('#collection-title').textContent = isMine ? 'Mis descubrimientos' : 'La antología';
+function showCollection() {
+  document.querySelector('#collection-title').textContent = 'Mis descubrimientos';
   const body = document.querySelector('#collection-body');
-  const entries = [...published.values()].filter(copla => !isMine || discovered.has(copla.id));
+  const entries = [...discovered].map(id => published.get(id)).filter(Boolean);
   body.replaceChildren();
+  body.append(element('p', `${entries.length}/${published.size} descubrimientos`, 'collection-progress'));
   if (!entries.length) {
-    body.append(element('p', isMine ? 'Aquí se guardarán tus descubrimientos durante el paseo.' : 'La antología se estrenará con la primera selección de coplas.'));
+    body.append(element('p', 'Todavía no has descubierto ninguna copla. Recorre las ilustraciones con Eddie y toca sus detalles. ¡Tu colección empieza aquí!'));
     collection.showModal();
     return;
   }
@@ -341,7 +342,7 @@ for (const place of places) {
 }
 
 document.querySelectorAll('[data-collection]').forEach(trigger => {
-  trigger.addEventListener('click', () => showCollection(trigger.dataset.collection));
+  trigger.addEventListener('click', showCollection);
 });
 document.querySelector('#expand-hero').addEventListener('click', () => {
   const cover = document.querySelector('#cover-image');
