@@ -121,3 +121,10 @@ body:has(dialog[open]) { overflow: hidden; }
 .play-guide p { margin: .35rem 0; }
 .eddie-intro { font-style: italic; }
 .eddie-intro strong { font-style: normal; }
+
+/* Firma del proyecto */
+.project-credit { text-align: center; background: var(--deep); color: var(--paper); padding: 1.7rem 1rem; }
+.project-credit p { margin: .3rem 0; }
+.project-credit .credit-title { font-family: var(--display); font-size: 1.2rem; font-weight: 600; }
+.project-credit .credit-note, .project-credit .credit-disclaimer { color: var(--muted); }
+.project-credit .credit-disclaimer { border-top: 1px solid #ffffff22; padding-top: .65rem; margin: .8rem auto 0; max-width: 28rem; }
