@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es-ES">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#112a38">
+  <meta name="description" content="Un paseo por Cádiz a golpe de tres por cuatro. Recorre la ciudad con Eddie y descubre su Carnaval.">
+  <title>Somewhere in Cai</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Somewhere in Cai, inicio"><span aria-hidden="true">✦</span> Somewhere in Cai</a>
+    <nav aria-label="Navegación principal">
+      <a href="#el-paseo">El paseo</a>
+      <button type="button" data-collection="all">La antología</button>
+      <button type="button" data-collection="mine"><span class="nav-full">Mis descubrimientos</span><span class="nav-short">Descubrimientos</span></button>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" aria-labelledby="titulo">
+      <h1 id="titulo" class="visually-hidden">Somewhere in Cai</h1>
+      <p class="visually-hidden">Un paseo por Cádiz a golpe de tres por cuatro.</p>
+      <figure class="hero-art">
+        <img id="cover-image" src="assets/portada-somewhere-in-cai.jpg" width="1536" height="864" fetchpriority="high" alt="Eddie, vestido de marinero, tiende la mano con la bandera del Cádiz CF y la catedral al atardecer al fondo.">
+      </figure>
+      <div class="hero-caption">
+        <button type="button" class="count" data-collection="mine"></button>
+        <a href="#el-paseo" class="start">Date una vuelta por Cai <span aria-hidden="true">↓</span></a>
+        <button type="button" class="expand" id="expand-hero"><span aria-hidden="true">⛶</span> Pantalla completa</button>
+      </div>
+    </section>
+
+    <section id="el-paseo" class="journey" aria-labelledby="journey-title">
+      <div class="journey-header">
+        <h2 id="journey-title">El paseo</h2>
+        <p>Elige una parada. Las coplas se esconden en los detalles de cada escena.</p>
+      </div>
+      <nav class="stops" id="stops" aria-label="Paradas del paseo"></nav>
+      <section class="scene" id="scene" aria-labelledby="scene-title"></section>
+    </section>
+  </main>
+
+  <footer>Homenaje no oficial a Cádiz, su Carnaval e Iron Maiden.</footer>
+
+  <dialog id="collection" class="sheet" aria-labelledby="collection-title">
+    <button type="button" class="close" data-close autofocus aria-label="Cerrar colección">×</button>
+    <h2 id="collection-title"></h2>
+    <div id="collection-body"></div>
+  </dialog>
+  <dialog id="copla" class="sheet" aria-labelledby="copla-title">
+    <button type="button" class="close" data-close autofocus aria-label="Cerrar copla">×</button>
+    <h2 id="copla-title"></h2>
+    <div id="copla-body"></div>
+  </dialog>
+  <dialog id="fullscreen" class="fullscreen" aria-label="Ilustración a pantalla completa">
+    <div id="fullscreen-art"></div>
+    <button type="button" class="close" data-close autofocus aria-label="Salir de pantalla completa">×</button>
+  </dialog>
+</body>
+</html>
