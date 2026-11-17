@@ -36,7 +36,7 @@ const places = [
       alt: 'Eddie sostiene una lapa negra en La Caleta. A su lado hay una guitarra y redes de pesca. Las monedas y las conchas están en la arena, junto a una barquita. Al fondo se ven el Vaporcito y el balneario de Nuestra Señora de la Palma.'
     },
     hotspots: [
-      { id: 'caleta-lapa-negra', x: 63.5, y: 17.5, object: 'La lapa negra', performanceId: 'caleta-lapa-negra', connection: 'Los Brujos Titis, primer premio de chirigotas, inspiran la caracterización carnavalera de Eddie en La Caleta.' },
+      { id: 'caleta-lapa-negra', x: 63.5, y: 17.5, object: 'La lapa negra', performanceId: 'caleta-lapa-negra', connection: 'La inolvidable chirigota de Manolo Santander y Sánchez Reyes, primer premio de 2019, inspira la caracterización carnavalera de Eddie en La Caleta.' },
       { id: 'caleta-monedas', x: 61.4, y: 89.3, object: 'Las monedas antiguas', performanceId: 'caleta-monedas', connection: 'El histórico hallazgo de monedas antiguas en la playa gaditana convertido en una de las coplas más universales del Carnaval.' },
       { id: 'caleta-vaporcito', x: 75.7, y: 29.8, object: 'El Vaporcito', performanceId: 'caleta-vaporcito', connection: 'El entrañable homenaje musical de Paco Alba al barco que unía Cádiz con El Puerto de Santa María.' },
       { id: 'caleta-balneario', x: 17.7, y: 17.4, object: 'El balneario de Nuestra Señora de la Palma', performanceId: 'caleta-balneario', connection: 'Una de las presentaciones más recordadas del Carnaval, dedicada a la playa y al sentimiento caletero.' },
@@ -142,7 +142,7 @@ const places = [
       { x: 95, y: 55, object: 'Cartel Cuarteto de Rota', collectionTitle: 'El cuarteto de Rota', connection: 'Homenaje a José Balsa Cirrito, Miguel Sánchez Romero-Guerrero y Felipe Pacheco Salas.', performanceIds: ['tavira-currito', 'tavira-windous'] },
       { x: 95, y: 43.75, object: 'Cartel El Bati', collectionTitle: 'El Bati y Vera Luque', connection: 'Parodias y cuplés del grupo que dirigió Fernando Casas Ciria.', performanceIds: ['tavira-encadenados', 'tavira-pejigueras-ninos', 'tavira-pejigueras-pitita'] },
       { x: 62, y: 45, object: 'Personaje con carpeta', collectionTitle: 'El arte de la parodia', connection: 'Enredos y personajes que hicieron historia en el Falla.', performanceIds: ['tavira-enredo', 'tavira-ser', 'tavira-heidi'] },
-      { x: 48, y: 46, object: 'Personaje en bata con patito', collectionTitle: 'El Morera', connection: 'Del campo a La Caleta con el cuarteto del Morera.', performanceIds: ['tavira-campo', 'tavira-comando', 'tavira-ares'] },
+      { x: 48, y: 46, object: 'Personaje en bata con patito', collectionTitle: 'El Morera', connection: 'Parodias del cuarteto del Morera, desde Los hombres del campo hasta el Comando Caleti.', performanceIds: ['tavira-campo', 'tavira-comando', 'tavira-ares'] },
       { x: 83, y: 35, object: 'Marinero con prismáticos', collectionTitle: 'El Gago', connection: 'El humor del cuarteto del Gago.', performanceIds: ['tavira-rolling', 'tavira-pensionistas'] },
       { x: 72, y: 50, object: 'Personaje con vestido de flores', collectionTitle: 'Las nuevas generaciones', connection: 'Dos épocas del cuarteto de los niños.', performanceIds: ['tavira-canon', 'tavira-caseta'] },
       { x: 94, y: 21, object: 'Cartel de Romanceros', collectionTitle: 'Los romanceros', connection: 'Versos, cartelón y humor de calle.', performanceIds: ['tavira-bruce', 'tavira-hueva', 'tavira-camina', 'tavira-namber'] },
@@ -193,6 +193,9 @@ const performances = [
     year: 2019,
     modality: "Chirigota — presentación",
     youtubeId: "r3kUmJSHce0",
+    prize: "Primer premio",
+    sourceUrl: "https://www.diariodecadiz.es/diario_del_carnaval/carnaval-cadiz-chirigota-maldicion-lapa-negra-gana-coac-2019-santander-video_0_1332766906.amp.html",
+    sourceLabel: "Crónica del primer premio del COAC 2019",
     recording: "Actuación completa de la final del COAC 2019."
   },
   {
@@ -1281,7 +1284,7 @@ const performances = [
     "youtubeId": "PtcK-qZZJww",
     "youtubeStart": 476,
     "youtubeEnd": 604,
-    "context": "El camping celebra la boda de la Santera y el Papito con el Pena de encargado de los anillos.",
+    "context": "El camping celebra la boda de la Santera y el Papito con el Penas encargado de los anillos.",
     "prize": "Tercer premio",
     "sourceUrl": "https://www.portaldecadiz.com/carnaval/97784-video-una-boda-el-cadiz-betis-y-muy-poca-vergueenza-en-mi-caseta-cabe-todo-el-mundo-completa-la-historia-",
     "sourceLabel": "Ficha y archivo"
